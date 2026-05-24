@@ -5,6 +5,10 @@ const path = require("path");
 
 const ROOT = process.cwd();
 const PAGES = ["index.html", "bronirovaniye.html", "privacypolicy.html", "pravila.html"];
+const DETILDA_BLOCKLIST = [
+  "src=\"js/tilda-",
+  "cdn.postnikovmd.com/tilda",
+];
 const CRITICAL = {
   "index.html": [
     "mc.yandex.ru/metrika/tag.js",
@@ -91,6 +95,10 @@ for (const [page, needles] of Object.entries(CRITICAL)) {
   const content = readUtf8(page);
   for (const needle of needles) {
     if (!content.includes(needle)) fail(`Missing critical marker in ${page}: ${needle}`);
+  }
+
+  for (const blocked of DETILDA_BLOCKLIST) {
+    if (content.includes(blocked)) fail(`Found blocked legacy dependency in ${page}: ${blocked}`);
   }
 }
 

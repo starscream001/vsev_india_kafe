@@ -1,0 +1,64 @@
+.t-records {
+  opacity: 1 !important;
+}
+
+.t396__artboard.rendering .tn-elem {
+  visibility: visible !important;
+}
+
+.t396__elem--anim-hidden {
+  opacity: 1 !important;
+}
+
+.t1003__content-wrapper {
+  opacity: 1 !important;
+}
+
+.t1003__content.bh-marquee-ready {
+  animation-name: bh-marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+@keyframes bh-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.t450__overlay {
+  display: none;
+}
+
+.t450__overlay.bh-overlay-open {
+  display: block;
+}
+
+.t450.bh-menu-open {
+  transform: translate(0, 0) !important;
+}
+
+.t-popup.bh-popup-open {
+  display: block !important;
+}
+
+.t-popup__bg.bh-popup-bg-open {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+body.bh-lock-scroll {
+  overflow: hidden;
+}
+
+.bh-collapsible {
+  display: none !important;
+}
+
+.bh-collapsible.bh-collapsible-open {
+  display: block !important;
+}
