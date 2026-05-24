@@ -13,30 +13,42 @@ function injectPreloadIndex(html) {
 }
 
 function optimizeImgTags(html) {
-  let imgIndex = 0;
+  let boostedRaster = false;
 
   return html.replace(/<img\b[^>]*>/gi, (tag) => {
     let t = tag;
     const hasLoading = /\bloading=/.test(t);
     const hasDecoding = /\bdecoding=/.test(t);
     const hasFetchpriority = /\bfetchpriority=/.test(t);
+    const srcMatch = t.match(/\bsrc="([^"]+)"/i);
+    const src = (srcMatch ? srcMatch[1] : "").toLowerCase();
+    const isRaster = /\.(png|jpe?g|webp|avif|gif)(\?|#|$)/i.test(src);
+    const isLikelyIcon = src.includes("fonts/") || src.endsWith(".svg");
 
     if (!hasDecoding) {
       t = t.replace(/>$/, ' decoding="async">');
     }
 
+    const shouldBoost = !boostedRaster && isRaster && !isLikelyIcon;
     if (!hasLoading) {
-      if (imgIndex < 2) {
+      if (shouldBoost) {
         t = t.replace(/>$/, ' loading="eager">');
-        if (!hasFetchpriority) {
-          t = t.replace(/>$/, ' fetchpriority="high">');
-        }
       } else {
         t = t.replace(/>$/, ' loading="lazy">');
       }
+    } else if (isLikelyIcon) {
+      t = t.replace(/\bloading="eager"/gi, 'loading="lazy"');
     }
 
-    imgIndex += 1;
+    if (shouldBoost) {
+      boostedRaster = true;
+      if (!hasFetchpriority) {
+        t = t.replace(/>$/, ' fetchpriority="high">');
+      }
+    } else {
+      t = t.replace(/\sfetchpriority="high"/gi, "");
+    }
+
     return t;
   });
 }
