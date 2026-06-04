@@ -1,1 +1,129 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>AI Defect Reviewer</title></head><body><h1>AI Defect Reviewer & Interviewer</h1><p>UTF-8 test: Привет мир</p></body></html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>AI Defect Reviewer & Interviewer</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f4f5f7;color:#172b4d;line-height:1.6;padding:40px;max-width:1200px;margin:auto}
+.hero{background:linear-gradient(135deg,#0b1f3a,#0052cc);color:white;padding:40px;border-radius:20px}
+.card{background:white;padding:24px;border-radius:16px;margin-top:20px;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+code,pre{background:#172b4d;color:white;padding:12px;border-radius:10px;display:block;overflow:auto}
+table{width:100%;border-collapse:collapse;margin-top:20px}
+td,th{border:1px solid #dfe1e6;padding:12px}
+th{background:#deebff}
+.badge{display:inline-block;background:#e3fcef;color:#006644;padding:6px 12px;border-radius:20px;margin:4px;font-weight:bold}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>AI Defect Reviewer & Interviewer</h1>
+<p>AI-помощник для повышения качества дефектов перед заведением в Jira.</p>
+<span class="badge">Python 3</span>
+<span class="badge">GigaCode CLI</span>
+<span class="badge">Закрытый контур</span>
+<span class="badge">MVP</span>
+</div>
+<div class="card">
+<h2>Что это такое?</h2>
+<p>Это локальный AI-инструмент, который помогает тестировщику собирать качественные дефекты. Он задаёт вопросы, формирует дефект, проводит AI-ревью и рассчитывает Quality Score.</p>
+</div>
+<div class="card">
+<h2>Как это работает?</h2>
+<pre>Тестировщик
+↓
+AI Interviewer
+↓
+GigaCode CLI
+↓
+AI Review
+↓
+Quality Score
+↓
+Готовый дефект для Jira</pre>
+</div>
+<div class="card">
+<h2>Основные возможности</h2>
+<ul>
+<li>AI Interviewer</li>
+<li>AI Defect Builder</li>
+<li>AI Reviewer</li>
+<li>Quality Score</li>
+<li>Рекомендации для разработчиков</li>
+<li>Анализ качества дефекта</li>
+</ul>
+</div>
+<div class="card">
+<h2>Пример</h2>
+<h3>Было</h3>
+<pre>После удаления диалог остается в списке</pre>
+<h3>Стало</h3>
+<pre>Заголовок:
+Удалённый диалог продолжает отображаться в списке
+
+Шаги:
+1. Открыть список диалогов
+2. Удалить диалог
+3. Обновить страницу
+
+Ожидаемый результат:
+Диалог исчезает из списка
+
+Фактический результат:
+Диалог остается в списке
+
+Quality Score:
+92/100</pre>
+</div>
+<div class="card">
+<h2>Установка</h2>
+<pre>git clone https://github.com/starscream001/vsev_india_kafe.git
+
+cd vsev_india_kafe
+
+bash run.sh</pre>
+<p>После запуска открыть:</p>
+<pre>http://127.0.0.1:8000/index.html</pre>
+</div>
+<div class="card">
+<h2>Что проверяет AI?</h2>
+<table>
+<tr><th>Проверка</th><th>Что анализируется</th></tr>
+<tr><td>Шаги</td><td>Можно ли воспроизвести дефект</td></tr>
+<tr><td>Expected Result</td><td>Понятно ли корректное поведение</td></tr>
+<tr><td>Actual Result</td><td>Понятно ли что сломалось</td></tr>
+<tr><td>Окружение</td><td>Стенд, браузер, версия</td></tr>
+<tr><td>Артефакты</td><td>Скриншоты, логи, requestId</td></tr>
+</table>
+</div>
+<div class="card">
+<h2>Frontend рекомендации</h2>
+<ul>
+<li>Приложить скриншот</li>
+<li>Приложить видео</li>
+<li>Указать браузер</li>
+<li>Показать консоль браузера</li>
+</ul>
+<h2>Backend рекомендации</h2>
+<ul>
+<li>Приложить логи</li>
+<li>Указать requestId</li>
+<li>Указать traceId</li>
+<li>Приложить текст ошибки</li>
+</ul>
+</div>
+<div class="card">
+<h2>Roadmap</h2>
+<ul>
+<li>Jira API</li>
+<li>Zephyr</li>
+<li>Confluence</li>
+<li>Quality Gate</li>
+<li>Автоматическое ревью дефектов</li>
+</ul>
+</div>
+<div class="card">
+<h2>Итог</h2>
+<p>AI Defect Reviewer & Interviewer — это локальный AI quality gate для дефектов, который помогает QA-командам повышать качество описания багов.</p>
+</div>
+</body>
+</html>
