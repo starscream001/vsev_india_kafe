@@ -1,0 +1,224 @@
+<table style="width:100%;border-collapse:separate;border-spacing:0;background:#091E42;border-radius:28px;overflow:hidden;">
+<tbody>
+<tr>
+<td style="padding:48px 52px;background:#091E42;color:#ffffff;vertical-align:top;">
+<p style="font-size:13px;letter-spacing:2px;text-transform:uppercase;color:#7EE2B8;margin:0 0 16px 0;font-weight:bold;">AI FOR QA · CLOSED CIRCUIT · GIGACODE CLI</p>
+<h1 style="font-size:48px;line-height:1.05;color:#ffffff;margin:0 0 18px 0;font-weight:800;">AI Defect Reviewer &amp; Interviewer</h1>
+<p style="font-size:22px;line-height:1.45;color:#EAF2FF;margin:0 0 24px 0;max-width:920px;">Локальный AI quality gate для QA-команд: помогает превратить сырое описание проблемы в качественный инженерный дефект, готовый для Jira и анализа разработчиком.</p>
+<p style="margin:0;">
+<span style="display:inline-block;background:#E3FCEF;color:#006644;border-radius:18px;padding:7px 12px;margin:4px;font-weight:bold;">Python 3</span>
+<span style="display:inline-block;background:#DEEBFF;color:#0747A6;border-radius:18px;padding:7px 12px;margin:4px;font-weight:bold;">GigaCode CLI</span>
+<span style="display:inline-block;background:#FFF0B3;color:#974F0C;border-radius:18px;padding:7px 12px;margin:4px;font-weight:bold;">Закрытый контур</span>
+<span style="display:inline-block;background:#EAE6FF;color:#403294;border-radius:18px;padding:7px 12px;margin:4px;font-weight:bold;">AI Review</span>
+<span style="display:inline-block;background:#FFEBE6;color:#BF2600;border-radius:18px;padding:7px 12px;margin:4px;font-weight:bold;">Quality Score</span>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="width:100%;border-collapse:separate;border-spacing:18px;margin-top:10px;">
+<tbody>
+<tr>
+<td style="width:25%;background:#ffffff;border:1px solid #DFE1E6;border-radius:18px;padding:22px;vertical-align:top;">
+<div style="font-size:34px;font-weight:bold;color:#0052CC;">↓</div>
+<div style="font-size:16px;font-weight:bold;color:#172B4D;">Меньше возвратов</div>
+<div style="font-size:14px;color:#5E6C84;">AI заранее показывает, чего не хватает в дефекте.</div>
+</td>
+<td style="width:25%;background:#ffffff;border:1px solid #DFE1E6;border-radius:18px;padding:22px;vertical-align:top;">
+<div style="font-size:34px;font-weight:bold;color:#36B37E;">92</div>
+<div style="font-size:16px;font-weight:bold;color:#172B4D;">Quality Score</div>
+<div style="font-size:14px;color:#5E6C84;">Оценка качества дефекта по понятным критериям.</div>
+</td>
+<td style="width:25%;background:#ffffff;border:1px solid #DFE1E6;border-radius:18px;padding:22px;vertical-align:top;">
+<div style="font-size:34px;font-weight:bold;color:#FF991F;">Jira</div>
+<div style="font-size:16px;font-weight:bold;color:#172B4D;">Готовый текст</div>
+<div style="font-size:14px;color:#5E6C84;">Результат можно копировать прямо в карточку дефекта.</div>
+</td>
+<td style="width:25%;background:#ffffff;border:1px solid #DFE1E6;border-radius:18px;padding:22px;vertical-align:top;">
+<div style="font-size:34px;font-weight:bold;color:#6554C0;">AI</div>
+<div style="font-size:16px;font-weight:bold;color:#172B4D;">Developer Review</div>
+<div style="font-size:14px;color:#5E6C84;">Проверка глазами разработчика и QA Lead.</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="width:100%;border-collapse:separate;border-spacing:0;margin-top:22px;background:#ffffff;border:1px solid #DFE1E6;border-radius:24px;overflow:hidden;">
+<tbody>
+<tr>
+<td style="padding:34px 38px;">
+<h2 style="font-size:34px;color:#091E42;margin:0 0 14px 0;">Что это такое?</h2>
+<p style="font-size:18px;color:#172B4D;margin:0 0 16px 0;">AI Defect Reviewer &amp; Interviewer — это локальный помощник для тестировщика. Он не заменяет QA, а помогает собрать дефект так, чтобы разработчик мог сразу начать анализ без лишней переписки.</p>
+<table style="width:100%;border-collapse:separate;border-spacing:14px;">
+<tbody>
+<tr>
+<td style="background:#E3FCEF;border-radius:16px;padding:18px;vertical-align:top;">
+<b style="color:#006644;">1. Интервьюирует</b><br/>Задаёт вопросы по проблеме: где найдено, как воспроизвести, что ожидалось, что получилось.
+</td>
+<td style="background:#DEEBFF;border-radius:16px;padding:18px;vertical-align:top;">
+<b style="color:#0747A6;">2. Формирует дефект</b><br/>Собирает шаги, Expected Result, Actual Result, окружение и артефакты.
+</td>
+<td style="background:#FFF0B3;border-radius:16px;padding:18px;vertical-align:top;">
+<b style="color:#974F0C;">3. Проверяет качество</b><br/>Выдаёт AI Review, рекомендации и Defect Quality Score.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="width:100%;border-collapse:separate;border-spacing:0;margin-top:22px;background:#172B4D;border-radius:24px;overflow:hidden;">
+<tbody>
+<tr>
+<td style="padding:34px 38px;color:#ffffff;">
+<h2 style="font-size:34px;color:#ffffff;margin:0 0 18px 0;">Вау-эффект: из одной строки в готовый дефект</h2>
+<table style="width:100%;border-collapse:separate;border-spacing:18px;">
+<tbody>
+<tr>
+<td style="width:45%;background:#091E42;border:1px solid #344563;border-radius:18px;padding:22px;vertical-align:top;">
+<div style="font-size:13px;color:#FFAB00;font-weight:bold;text-transform:uppercase;letter-spacing:1px;">Было</div>
+<pre style="white-space:pre-wrap;background:#061424;color:#ffffff;border-radius:14px;padding:18px;font-size:15px;line-height:1.6;">После удаления диалог остается в списке</pre>
+</td>
+<td style="width:55%;background:#0B2B4C;border:1px solid #4C9AFF;border-radius:18px;padding:22px;vertical-align:top;">
+<div style="font-size:13px;color:#7EE2B8;font-weight:bold;text-transform:uppercase;letter-spacing:1px;">Стало</div>
+<pre style="white-space:pre-wrap;background:#061424;color:#ffffff;border-radius:14px;padding:18px;font-size:15px;line-height:1.6;">Заголовок:
+Удалённый диалог продолжает отображаться в списке
+
+Шаги воспроизведения:
+1. Открыть список диалогов
+2. Выбрать диалог
+3. Нажать кнопку удаления
+4. Обновить страницу
+
+Ожидаемый результат:
+Удалённый диалог отсутствует в списке.
+
+Фактический результат:
+Удалённый диалог продолжает отображаться.
+
+AI Review:
+Не хватает requestId и логов.
+
+Defect Quality Score: 92/100</pre>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="width:100%;border-collapse:separate;border-spacing:0;margin-top:22px;background:#ffffff;border:1px solid #DFE1E6;border-radius:24px;overflow:hidden;">
+<tbody>
+<tr>
+<td style="padding:34px 38px;">
+<h2 style="font-size:34px;color:#091E42;margin:0 0 18px 0;">Как работает пайплайн</h2>
+<table style="width:100%;border-collapse:separate;border-spacing:10px;">
+<tbody>
+<tr>
+<td style="text-align:center;background:#DEEBFF;border-radius:16px;padding:18px;font-weight:bold;color:#0747A6;">Тестировщик</td>
+<td style="text-align:center;color:#6B778C;font-size:24px;">→</td>
+<td style="text-align:center;background:#EAE6FF;border-radius:16px;padding:18px;font-weight:bold;color:#403294;">AI Interviewer</td>
+<td style="text-align:center;color:#6B778C;font-size:24px;">→</td>
+<td style="text-align:center;background:#E3FCEF;border-radius:16px;padding:18px;font-weight:bold;color:#006644;">GigaCode CLI</td>
+<td style="text-align:center;color:#6B778C;font-size:24px;">→</td>
+<td style="text-align:center;background:#FFF0B3;border-radius:16px;padding:18px;font-weight:bold;color:#974F0C;">Jira-ready дефект</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="width:100%;border-collapse:separate;border-spacing:18px;margin-top:10px;">
+<tbody>
+<tr>
+<td style="width:50%;background:#ffffff;border:1px solid #DFE1E6;border-radius:24px;padding:30px;vertical-align:top;">
+<h2 style="font-size:28px;color:#091E42;margin:0 0 14px 0;">Что проверяет AI?</h2>
+<table style="width:100%;border-collapse:collapse;">
+<tbody>
+<tr><th style="background:#DEEBFF;padding:12px;text-align:left;">Проверка</th><th style="background:#DEEBFF;padding:12px;text-align:left;">Что анализируется</th></tr>
+<tr><td style="padding:12px;border:1px solid #DFE1E6;">Шаги</td><td style="padding:12px;border:1px solid #DFE1E6;">Можно ли воспроизвести проблему</td></tr>
+<tr><td style="padding:12px;border:1px solid #DFE1E6;">Expected Result</td><td style="padding:12px;border:1px solid #DFE1E6;">Понятно ли правильное поведение</td></tr>
+<tr><td style="padding:12px;border:1px solid #DFE1E6;">Actual Result</td><td style="padding:12px;border:1px solid #DFE1E6;">Понятно ли, что именно сломалось</td></tr>
+<tr><td style="padding:12px;border:1px solid #DFE1E6;">Окружение</td><td style="padding:12px;border:1px solid #DFE1E6;">Стенд, браузер, версия</td></tr>
+<tr><td style="padding:12px;border:1px solid #DFE1E6;">Артефакты</td><td style="padding:12px;border:1px solid #DFE1E6;">Логи, скриншоты, requestId, traceId</td></tr>
+</tbody>
+</table>
+</td>
+<td style="width:50%;background:#ffffff;border:1px solid #DFE1E6;border-radius:24px;padding:30px;vertical-align:top;">
+<h2 style="font-size:28px;color:#091E42;margin:0 0 14px 0;">Что получает QA?</h2>
+<ul style="font-size:16px;line-height:1.8;">
+<li>Готовый заголовок дефекта</li>
+<li>Структурированные шаги воспроизведения</li>
+<li>Expected Result и Actual Result</li>
+<li>Окружение и артефакты</li>
+<li>AI Review</li>
+<li>Quality Score</li>
+<li>Рекомендации, что ещё приложить</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="width:100%;border-collapse:separate;border-spacing:0;margin-top:22px;background:#ffffff;border:1px solid #DFE1E6;border-radius:24px;overflow:hidden;">
+<tbody>
+<tr>
+<td style="padding:34px 38px;">
+<h2 style="font-size:34px;color:#091E42;margin:0 0 18px 0;">Установка и запуск</h2>
+<p><b>1. Скачать проект</b></p>
+<pre style="white-space:pre-wrap;background:#091E42;color:#ffffff;border-radius:14px;padding:18px;">git clone https://stash.delta.sbrf.ru/users/22189365/repos/ai-defect-interviewer/browse</pre>
+<p><b>2. Перейти в папку проекта</b></p>
+<pre style="white-space:pre-wrap;background:#091E42;color:#ffffff;border-radius:14px;padding:18px;">cd ai-defect-interviewer</pre>
+<p><b>3. Запустить</b></p>
+<pre style="white-space:pre-wrap;background:#091E42;color:#ffffff;border-radius:14px;padding:18px;">bash run.sh</pre>
+<p><b>4. Открыть в браузере</b></p>
+<pre style="white-space:pre-wrap;background:#091E42;color:#ffffff;border-radius:14px;padding:18px;">http://127.0.0.1:8000/index.html</pre>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="width:100%;border-collapse:separate;border-spacing:18px;margin-top:10px;">
+<tbody>
+<tr>
+<td style="width:50%;background:#E3FCEF;border-radius:24px;padding:30px;vertical-align:top;border:1px solid #ABF5D1;">
+<h2 style="font-size:28px;color:#006644;margin:0 0 12px 0;">Frontend дефекты</h2>
+<ul style="line-height:1.8;">
+<li>Приложить скриншот</li>
+<li>Приложить видео воспроизведения</li>
+<li>Указать браузер и версию</li>
+<li>Показать ошибки консоли</li>
+<li>Приложить ссылку на макет</li>
+</ul>
+</td>
+<td style="width:50%;background:#DEEBFF;border-radius:24px;padding:30px;vertical-align:top;border:1px solid #B3D4FF;">
+<h2 style="font-size:28px;color:#0747A6;margin:0 0 12px 0;">Backend дефекты</h2>
+<ul style="line-height:1.8;">
+<li>Приложить requestId</li>
+<li>Приложить traceId</li>
+<li>Приложить логи</li>
+<li>Указать сервис</li>
+<li>Приложить текст ошибки</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+
+<table style="width:100%;border-collapse:separate;border-spacing:0;background:#091E42;border-radius:28px;margin-top:24px;overflow:hidden;">
+<tbody>
+<tr>
+<td style="padding:42px 48px;color:#ffffff;">
+<h2 style="font-size:38px;color:#ffffff;margin:0 0 14px 0;">Итог</h2>
+<p style="font-size:20px;line-height:1.5;color:#EAF2FF;margin:0;">AI Defect Reviewer &amp; Interviewer — это не просто генератор текста. Это локальный AI-инструмент, который помогает QA-командам повысить зрелость процесса, улучшить качество дефектов и ускорить передачу задач в разработку.</p>
+</td>
+</tr>
+</tbody>
+</table>
